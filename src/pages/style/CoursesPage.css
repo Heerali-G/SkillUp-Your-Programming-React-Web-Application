@@ -1,0 +1,151 @@
+/* File: src/pages/styles/CoursesPage.css */
+
+.courses-page-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.courses-page-heading {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* --- Controls/Filters Bar --- */
+.controls-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.search-input, .filter-select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    min-width: 150px;
+}
+
+.search-input {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+/* --- Course Card Grid --- */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.no-results {
+    grid-column: 1 / -1; /* Make the message span all columns */
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2em;
+    padding: 50px 0;
+}
+
+/* --- Course Card Styling --- */
+.course-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-title {
+    color: #007bff;
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+}
+
+.course-instructor {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    color: #555;
+    flex-grow: 1; /* Ensures the footer stays at the bottom */
+}
+
+.course-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-price {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2ecc71; /* Green for price */
+}
+
+.details-btn {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #2980b9;
+}
+
+/* --- Level Badge Styling --- */
+.level-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+}
+.level-beginner { background-color: #2ecc71; } /* Green */
+.level-intermediate { background-color: #f39c12; } /* Orange */
+.level-advanced { background-color: #e74c3c; } /* Red */
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+    .controls-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-input, .filter-select {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
