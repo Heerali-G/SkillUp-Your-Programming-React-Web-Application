@@ -4,9 +4,9 @@ import './style/AboutPage.css'; // Import dedicated styling
 
 // Mock Team Data (for a more realistic feel)
 const teamMembers = [
-    { name: 'Alex Johnson', role: 'Chief Executive Officer', bio: 'Visionary behind SkillSprint, focused on making quality education accessible.', photo: 'https://i.pravatar.cc/150?img=1' },
-    { name: 'Dr. Jane Code', role: 'Head of Curriculum', bio: 'Expert programmer and educator designing our advanced course pathways.', photo: 'https://i.pravatar.cc/150?img=2' },
-    { name: 'Chris Lee', role: 'Lead Platform Engineer', bio: 'Ensures the SkillSprint platform is fast, stable, and a joy to use.', photo: 'https://i.pravatar.cc/150?img=3' },
+    { name: 'Alin', role: 'Chief Executive Officer', bio: 'Visionary behind SkillSprint, focused on making quality education accessible.', photo: 'https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?semt=ais_hybrid&w=740&q=80' },
+    { name: 'Dr. Jane Code', role: 'Head of Curriculum', bio: 'Expert programmer and educator designing our advanced course pathways.', photo: 'https://media.istockphoto.com/id/1500308602/photo/happy-black-man-mature-or-portrait-in-finance-office-about-us-company-profile-picture-or-ceo.jpg?s=612x612&w=0&k=20&c=3BWt_eT7QaaiGx4zI_K63pnntIp5Cv1qW8Pw-_bSlm8=' },
+    { name: 'Chris Lee', role: 'Lead Platform Engineer', bio: 'Ensures the SkillSprint platform is fast, stable, and a joy to use.', photo: 'https://theportrait.company/wp-content/uploads/2022/06/Corporate-Headshot-for-a-LinkedIn-Profile.jpg' },
 ];
 
 function AboutPage() {
